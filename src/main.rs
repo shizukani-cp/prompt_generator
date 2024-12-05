@@ -83,8 +83,8 @@ fn main() {
                         c = command,
                         cs = codes
                     );
-                    println!("{}", prompt);
                     let _ = clipboard.set_text(prompt).unwrap();
+                    println!("Prompt Coppied!");
                 }
             }
         }
