@@ -70,11 +70,11 @@ fn main() {
                 } else {
                     let mut codes = "".to_string();
                     for s in &sources {
-                        codes = format!(
+                        codes.push_str(&format!(
                             "### {}\n\
                                         {}\n",
                             s.filename, s.body
-                        );
+                        ));
                     }
                     let prompt = format!(
                         "{c}\n\
