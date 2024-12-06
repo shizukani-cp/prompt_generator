@@ -71,14 +71,14 @@ fn main() {
                     let mut codes = "".to_string();
                     for s in &sources {
                         codes.push_str(&format!(
-                            "### {}\n\
-                                        {}\n",
+                            "```{}\n\
+                             {}\n```",
                             s.filename, s.body
                         ));
                     }
                     let prompt = format!(
                         "{c}\n\
-                        コード:\n\
+                        # コード\n\
                         {cs}",
                         c = command,
                         cs = codes
